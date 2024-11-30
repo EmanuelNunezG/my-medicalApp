@@ -1,4 +1,4 @@
-package org.example;
+package org.modules;
 
 import java.util.ArrayList;
 import java.util.Date;

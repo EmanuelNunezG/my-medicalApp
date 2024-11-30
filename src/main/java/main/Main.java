@@ -1,8 +1,9 @@
-package org.example;
+package main;
+
+import org.modules.Doctor;
+import org.modules.Patient;
 
 import java.util.Date;
-
-import static ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {

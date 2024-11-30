@@ -1,4 +1,4 @@
-package org.example;
+package org.modules;
 
 public class User {
     private int id;
