@@ -12,6 +12,11 @@ public class Doctor extends User {
         System.out.println("Doctor Constructor Called with name as " + name);
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Employee Hospital: Cruz Roja");
+    }
+
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     public void addAvailableAppointment(Date date, String time) {

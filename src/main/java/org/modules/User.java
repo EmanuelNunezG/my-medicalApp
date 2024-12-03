@@ -57,6 +57,8 @@ public abstract class User {
         }
     }
 
+    public abstract void showDataUser();
+
     @Override
     public String toString() {
         return "User{" +

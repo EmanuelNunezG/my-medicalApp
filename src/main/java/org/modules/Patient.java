@@ -12,6 +12,11 @@ public class Patient  extends User{
         System.out.println("Patient Constructor Called with name as " + name);
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Patient");
+    }
+
     public String getBirthday() {
         return birthday;
     }

@@ -9,6 +9,11 @@ public class Nurse extends User {
         System.out.println("Nurse Constructor Called with name as " + name);
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Hospital: Cruz Verde");
+    }
+
     public String getSpeciality() {
         return speciality;
     }

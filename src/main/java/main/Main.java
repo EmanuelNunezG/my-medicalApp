@@ -2,6 +2,7 @@ package main;
 
 import org.modules.Doctor;
 import org.modules.Patient;
+import org.modules.User;
 
 import java.util.Date;
 
@@ -22,7 +23,15 @@ public class Main {
 //
         //        System.out.println(doctor.getAvailableAppointments());
         System.out.println(doctor);
-//
+
+        System.out.println("- - - - - ");
+        User user = new Doctor("Rafael", "mailtest@mail.com");
+        user.showDataUser();
+
+        User userPatient = new Patient("Alan Vaca","mailtestalan@gmail.com");
+        userPatient.showDataUser();
+
+
 //        for(Doctor.AvailableAppointment aA : doctor.getAvailableAppointments()){
 //            System.out.println(aA.getDate() + " " + aA.getTime());
 //        }
