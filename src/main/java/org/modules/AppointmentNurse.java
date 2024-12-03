@@ -2,10 +2,10 @@ package org.modules;
 
 import java.util.Date;
 
-public class AppointmentDoctor implements ISchedulable {
+public class AppointmentNurse implements ISchedulable {
     private int id;
+    private Nurse nurse;
     private Patient patient;
-    private Doctor doctor;
     private Date date;
     private String time;
 
@@ -17,20 +17,20 @@ public class AppointmentDoctor implements ISchedulable {
         this.id = id;
     }
 
+    public Nurse getNurse() {
+        return nurse;
+    }
+
+    public void setNurse(Nurse nurse) {
+        this.nurse = nurse;
+    }
+
     public Patient getPatient() {
         return patient;
     }
 
     public void setPatient(Patient patient) {
         this.patient = patient;
-    }
-
-    public Doctor getDoctor() {
-        return doctor;
-    }
-
-    public void setDoctor(Doctor doctor) {
-        this.doctor = doctor;
     }
 
     public Date getDate() {
