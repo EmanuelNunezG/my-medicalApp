@@ -31,6 +31,17 @@ public class Main {
         User userPatient = new Patient("Alan Vaca","mailtestalan@gmail.com");
         userPatient.showDataUser();
 
+        //Example of anonymous class
+        User user1 = new User("Anonymous User", "anom@test.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Anonymous User");
+                System.out.println("calling from abstract class");
+            }
+        };
+
+        user1.showDataUser();
+
 
 //        for(Doctor.AvailableAppointment aA : doctor.getAvailableAppointments()){
 //            System.out.println(aA.getDate() + " " + aA.getTime());
