@@ -39,7 +39,6 @@ public class Main {
                 System.out.println("calling from abstract class");
             }
         };
-
         user1.showDataUser();
 
 
