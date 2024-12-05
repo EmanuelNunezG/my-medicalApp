@@ -63,7 +63,6 @@ public class UIMenu {
         do {
             System.out.println("Insert your email: [q@q.com]");
             String email = scanner().nextLine();
-
             if (userType == 1) {
                 System.out.println("Doctor");
                 for (Doctor doctor : doctors) {
@@ -71,6 +70,7 @@ public class UIMenu {
                         emailCorrect = true;
                         //Get the logged user
                         doctorLogged = doctor;
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             } else if (userType == 2) {

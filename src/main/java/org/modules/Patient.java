@@ -9,7 +9,6 @@ public class Patient  extends User{
 
     public Patient(String name, String email) {
         super(name, email);
-        System.out.println("Patient Constructor Called with name as " + name);
     }
 
     @Override

@@ -10,7 +10,7 @@ public abstract class User {
     public User(String name, String email) {
         this.name = name;
         this.email = email;
-        System.out.println("User Constructor Called with name as " + name);
+        //System.out.println("User Constructor -> " + name);
     }
 
     public int getId() {
