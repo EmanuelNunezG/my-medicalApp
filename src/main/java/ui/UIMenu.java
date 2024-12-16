@@ -80,7 +80,7 @@ public class UIMenu {
                         emailCorrect = true;
                         //Get the logged user
                         patientLogged = patient;
-                        showPatientMenu();
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
             }

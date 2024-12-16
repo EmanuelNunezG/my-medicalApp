@@ -8,6 +8,7 @@ import java.util.Date;
 public class Doctor extends User {
     //Attributes
     private String speciality;
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     public Doctor(String name, String email) {
         super(name, email);
@@ -18,7 +19,6 @@ public class Doctor extends User {
         System.out.println("Employee Hospital: Cruz Roja");
     }
 
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     public void addAvailableAppointment(String date, String time) {
         availableAppointments.add(new Doctor.AvailableAppointment(date, time));
